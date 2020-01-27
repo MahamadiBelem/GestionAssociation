@@ -1,0 +1,140 @@
+#logo{ 
+/* position: absolute;
+ bottom: 0;   
+ border-radius: 0px 0px 5px 5px;   */ 
+ width: 310px;    
+ height: 570px; 
+/*padding-left: 600px;  
+     padding-top: 15px;    
+ padding-left: 4px;    
+ background-color: rgb(24,24,24);  Pour les anciens navigateurs     
+ background-color: rgba(24,24,24,0.8);    
+ color: white;    
+ font-size: 0.8em; */    
+ }
+ 
+ h1
+ {
+ color:blue;
+ font-family:"Time New Roman","lucida handwritting";
+ }
+ 
+ #bloc_men1
+ {
+   /*display: inline-block;*/
+ width:1340px;
+ background-color:green;
+ text-align: center;
+ height:40px;
+ font-size:20px;
+ font-family:"Algerian";
+
+ }
+ #bloc_men2
+ {
+   /*display: inline-block;*/
+ width:400px;
+ background-image: url ('Images/caj.png') repeat-x;
+ background: olive;
+ text-align: center;
+ height:200px;
+ font-size:20px;
+ color:black;
+ margin-left:400px;
+ margin-top: 50px;
+ padding-top:60px;
+border:20px; 
+ }
+ aside
+ {background:olive;
+ width:250px;
+ margin-bottom: 400px;
+ margin-left:80px;
+ font-family:"Monotype Corsiva";
+ font-size:30px;
+ color:black;
+ font-size:20px;
+ }
+ nav li {  
+ display: inline-block;  
+ margin-right: 60px;
+ text-align:center;
+ font-family:"Arial Black","lucida handwritting";
+ color:red;
+ }
+ nav li a
+ {
+ color:aqua;
+ font-family:"Time New Roman","lucida handwritting";
+ 
+ }
+ section
+ {
+ background:olive;
+ width: 865px; 
+ height:699px;
+ margin-left:300px;
+ /*background:url("../images/ca2j.jpg") ; */
+ }
+ 
+ article{  
+ width: 625px;   
+color:green;
+ }
+h3,h4{ font-family:Magneto;
+color:aqua;
+font-size:20px;
+}
+#tote{ font-family:Magneto;
+color:aqua;
+font-size:15px;
+text-align:center;
+}
+#tote1,#tote2{ font-family:arial;
+color:black;
+font-size:15px;
+text-align:center;
+font-family:"Bauhaus 93"
+}
+#ima2,#ima5
+{
+ width: 300px;    
+ height: 130px; 
+ margin-left:100px;
+}
+#ima3
+{
+ width: 400px;    
+ height: 200px; 
+ margin-right:100px;
+}
+footer
+{background:green;
+height: 160px;
+}
+footer ul
+{background:green;
+width:150px;
+height:100px;
+padding-bottom:50px;
+text-align:center;
+font-family:"Bauhaus 93"
+}
+body
+{
+
+/*background:url("../images/caj1.png"); */
+background:silver; 
+
+}
+#activité,#activit
+{
+background:green;
+}
+
+#ok1
+{
+
+background:url("../images/caj1.png"); 
+
+}
