@@ -13,8 +13,9 @@
 //use Carbon\Carbon;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('essai');
 });
+
 
 Route::get('/app2', function () {
     return view('layouts.app2');
@@ -22,7 +23,25 @@ Route::get('/app2', function () {
 Route::get('/register2', function () {
     return view('layouts.register2');
 });
+
+Route::get('/essai', function () {
+    return view('layouts.essai');
+});
 //Route::get('/accueil','AccueilsController@create');
+Auth::routes();
+Route::post('/essai', 'EssaiController@index')->name('essai');
+Route::post('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+
+
+
+
+
+
 
 //Route::get('/inscription', function () {
   //  return view('pages.inscription');
@@ -84,6 +103,3 @@ Route::any('/modal',
 //});
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

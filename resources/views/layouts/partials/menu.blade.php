@@ -27,43 +27,20 @@
           @guest
            <div class="row">
           <li class="nav-item">
-            <a class=" btn-large " href="login"><i class="material-icons left">account_circle</i>IDENTIFIER VOUS</a>
-            
-             <!--<img src="img/log2.jpg"  id="logo">
-               image of logi is made here-->
+            <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">accessibility</i>INSCRIRE  MILITANTS</a>
           </li>
-          </div> 
-        <!--   
-      <aside>
-      <div id="sidebar" class="nav-collapse ">
-        <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-desktop"></i>
-              <span>ACTIVITE</span>
-              </a>
-            <ul class="sub">
-              <li><a href="general.html">CE</a></li>
-              <li><a href="buttons.html">CGK</a></li>
-              <li><a href="panels.html">SECTION</a></li>
-              <li><a href="font_awesome.html">FEDERER</a></li>
-            </ul>
-         </li>
           </div>
-        </aside>    -->
+      
 
 
           <div class="row" class="sub-menu">
           <li class="nav-item">
             <i class="fa fa-desktop"></i>
             <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">accessibility</i>ACTIVITE EN COURS</a>
-        <!--  <ul class="sub">
-              <li><a href="general.html">CE</a></li>
-              <li><a href="buttons.html">CGK</a></li>
-              <li><a href="panels.html">SECTION</a></li>
-              <li><a href="font_awesome.html">FEDERER</a></li>
-            </ul>  -->
+        
           </li>
           </div>
+
 
           <div class="row">
           <li class="nav-item">
@@ -73,16 +50,29 @@
 
           <div class="row">
           <li class="nav-item">
-            <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">book</i>CONSULTER DOCUMENT</a>
+            <a class="btn btn-primary waves-effect waves-light large" href="modal"><i class="material-icons left">book </i>VOIR PROGRAMME </a>
+          </li>
+          </div>
+
+
+          <div class="row">
+          <li class="nav-item">
+            <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">book</i>VOIR DOCUMENT</a>
+          </li>
+          </div>
+
+          <div class="row">
+          <li class="nav-item">
+            <a class="btn btn-primary waves-effect waves-light large" href="modal"><i class="material-icons left">swap_vert </i>EDITER UNE LISTE </a>
           </li>
           </div>
           @endguest
+
           @auth
-         
           @if(Auth::user())
             <div class="row">
           <li class="nav-item">
-            <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">accessibility</i>INSCRIRE DES MILITANTS</a>
+            <a class="btn btn-primary waves-red large " href="/home"><i class="material-icons left">accessibility</i>INSCRIRE  MILITANTS</a>
           </li>
           </div>
           @endif
@@ -96,37 +86,6 @@
             </div>
         
             @endif
-
-            
-            <div class="row">
-          <li class="nav-item">
-            <a class="btn btn-primary waves-effect waves-light large" href="casuspect"><i class="material-icons left">view_list </i>GERER DES ENCADREURS</a>
-          </li>
-            </div>
-            
-            
-            <div class="row">
-          <li class="nav-item">
-            <a class="btn btn-primary waves-effect waves-light large" href="partenaire"><i class="material-icons left">face </i>GERER DES PARTENAIRES</a>
-          </li>
-            </div>
-            <div class="row">
-          <li class="nav-item">
-            <a class="btn btn-primary waves-effect waves-light large" href="modal"><i class="material-icons left">phone </i>CONTACTER UN SERVICE</a>
-          </li>
-            </div>
-
-            <div class="row">
-          <li class="nav-item">
-            <a class="btn btn-primary waves-effect waves-light large" href="modal"><i class="material-icons left">swap_vert </i>EDITER UNE LISTE </a>
-          </li>
-            </div>
-
-             <div class="row">
-          <li class="nav-item">
-            <a class="btn btn-primary waves-effect waves-light large" href="modal"><i class="material-icons left">book </i>CONSULTER PROGRAMME </a>
-          </li>
-            </div>
             @endauth
         </ul>
           </header>

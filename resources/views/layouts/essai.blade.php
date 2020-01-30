@@ -1,38 +1,40 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<title>Essai</title>
 
+     <!-- Favicons -->
+    <link href="{{ asset('doc2/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('doc2/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
-<script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link href="{{ asset('icofont/icofont.css') }}" rel="stylesheet">
-    <link href="{{ asset('iconfont/material-icons.css') }}" rel="stylesheet">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
+    <link href="{{ asset('doc2/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!--external css-->
+    <link href="{{ asset('doc2/lib/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
+    <!-- Custom styles for this template   -->
+     <link href="{{ asset('doc2/css/style.css') }}" rel="stylesheet">
+     <link href="{{ asset('doc2/css/style-responsive.css') }}" rel="stylesheet">
+    <!-- Styles 
 <body>
 <div class="container">
 
 <div class="card bg-info border-0 shadow-lg p-3 mb-5 rounded h-90" style="background-image: url('img/img1.jpg'); height:12rem;">
   <div class="card-body">
-    <!-- <h1 class="font-weight-bold text-dark text-center">GESTION<span class="badge badge-secondary">ASSOCIATION</span></h1>  Styles -->
+    <!-- <h1 class="font-weight-bold text-dark text-center">GESTION<span class="badge badge-secondary">ASSOCIATION</span></h1>  Styles 
   </div>
-</div>
+</div>  -->
 
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                <div class="card-header">
+    
+        
+            
+                
 
-                    <h2 class="text-center">CONNECTEZ-VOUS</h2>
+            <div id="login-page">
+                <div class="container">
 
-                </div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('welcome') }}">
+                    <form class="form-login" method="POST" action="{{ route('home') }}">   <!-- cette rote fait appel a home controller-->
                         @csrf
+                    <h2 class="form-login-heading">Se Connecter <i class="fa fa-user"></i> </h2>
 
-                        <div class="form-group row">
+                         <div class="login-wrap">
+          
+                             <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -88,8 +90,19 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
+       
+   
+
 </div>
 
-</body>
+ <!-- js placed at the end of the document so the pages load faster -->
+  <script src="{{ asset('doc2/lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('doc2/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+  <!--BACKSTRETCH-->
+  <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+  <script type="text/javascript" src="{{ asset('doc2/lib/jquery.backstretch.min.js') }}"></script>
+  <script>
+    $.backstretch("{{ asset('doc2/img/log2.png') }}",{
+      speed: 500
+    });
+  </script>

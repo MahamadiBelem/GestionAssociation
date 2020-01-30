@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-class LoginController extends Controller
+class EssaiController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -36,4 +36,18 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout'); // cetait guest
     }
+
+      /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+
+
+     
+    public function index()
+    {
+        return view('home');  //******* cest cette page qui est redirigé apres un login de succes ***/
+    }
+        
 }

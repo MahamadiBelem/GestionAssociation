@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Login2</title>
+  <title>Refister2</title>
 
   <!-- Favicons -->
   <link href="{{ asset('doc2/img/favicon.png') }}" rel="icon">
